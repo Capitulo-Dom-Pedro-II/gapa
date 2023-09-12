@@ -1949,8 +1949,9 @@ section {
 /* Contact Section - Home Page
 ------------------------------*/
 .contact .info-item {
-  background: rgba(var(--default-color-rgb), 0.03);
   padding: 30px;
+  border-radius: 20px;
+  background: rgba(var(--default-color-rgb), 0.03);
 }
 
 .contact .info-item i {
