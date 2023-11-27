@@ -35,12 +35,12 @@ jobs:
       - name: "SFTP Deploy"
         uses: milanmk/actions-file-deployer@master
         with:
-          remote-protocol: "sftp"
-          remote-host: "gapa.estreladaesperanca3.com.br"
-          remote-port: "65002"
-          remote-user: "u555202273"
+          remote-protocol: "ftp"
+          remote-host: "ftp.estreladaesperanca3.com.br"
+          remote-port: "21"
+          remote-user: "u969740184.leonardo"
           # Adicione o secret da senha
           remote-password: "${{ secrets.FTP_SITEBETA_PASS }}"
           # Altere o nome do diretório do projeto
-          remote-path: "/home/u555202273/domains/estreladaesperanca3.com.br/public_html/gapa"
+          remote-path: "/gapa"
           sync: "full"
